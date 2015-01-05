@@ -1,0 +1,1351 @@
+Package: community-profiles
+Version: 2
+Depends: libc, librt, libpthread, freifunk-common
+Source: feeds/luci/contrib/package/community-profiles
+Section: luci
+Architecture: brcm2708
+Installed-Size: 5433
+Filename: community-profiles_2_brcm2708.ipk
+Size: 6142
+MD5Sum: 6c7ecc8aebfba353ea56f7fc3678f840
+SHA256sum: ca947a030f5260f2abceffbf71939081444b7e62f0ed3d66ae18daefd688ae24
+Description:  These community profiles set defaults for various free network/freifunk communities and are used by wizards like ffwizard and meshwizard.
+
+Package: freifunk-common
+Version: 1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/freifunk-common
+Section: luci
+Architecture: brcm2708
+Installed-Size: 2963
+Filename: freifunk-common_1_brcm2708.ipk
+Size: 3697
+MD5Sum: b60e513ba7fc1ceae649d06c9ddae6ef
+SHA256sum: 026009b79b1a1a580561390158833a8342a544fc267fd2f299d716e36ca010ef
+Description:  Common files and scripts that are needed to run free wireless mesh networks.
+
+Package: freifunk-firewall
+Version: 3
+Depends: libc, librt, libpthread, firewall
+Source: feeds/luci/contrib/package/freifunk-firewall
+Section: luci
+Architecture: brcm2708
+Installed-Size: 1151
+Filename: freifunk-firewall_3_brcm2708.ipk
+Size: 2012
+MD5Sum: e36b8f2d8cddeb53fe2d9123f730eb6a
+SHA256sum: 6658df3be987d230f34f8f3217fde773eef71d33c63bd4f3e753df064eb80418
+Description:  Various firewall extensions for Freifunk. Includes NAT fixes and advanced settings.
+
+Package: freifunk-gwcheck
+Version: 4
+Depends: libc, librt, libpthread, firewall, ip, iptables-mod-ipopt, olsrd-mod-dyn-gw-plain
+Source: feeds/luci/contrib/package/freifunk-gwcheck
+Section: luci
+Architecture: brcm2708
+Installed-Size: 2028
+Filename: freifunk-gwcheck_4_brcm2708.ipk
+Size: 2877
+MD5Sum: 8e6cb9816984929a31e3f9cd1053119b
+SHA256sum: 87368a56e4c076b6e7752df29f5ef37d7e5fbcd49da5608c8b89f35ddca40ab7
+Description:  This script periodically checks if internet is available via your own gateway. If it detects that it is broken, then the defaultroute is removed from the main table and temporarilly placed in table gw-check until your internet works again. Config file is /etc/config/freifunk-gwcheck.
+
+Package: freifunk-mapupdate
+Version: 1
+Depends: libc, librt, libpthread, olsrd-mod-nameservice
+Source: feeds/luci/contrib/package/freifunk-mapupdate
+Section: luci
+Architecture: brcm2708
+Installed-Size: 1285
+Filename: freifunk-mapupdate_1_brcm2708.ipk
+Size: 2080
+MD5Sum: 8a126270b1556e06636e41bf379fc0ee
+SHA256sum: 02b829c8edb7d6650d58f10b3073c92d60f945ec42d069475cdae9bce898ccc8
+Description:  This script updates the freifunkmap (also known as the global map, see http://map.berlin.freifunk.net) every hour. Config file is /etc/config/freifunk-mapupdate.
+
+Package: freifunk-p2pblock
+Version: 3
+Depends: libc, librt, libpthread, iptables-mod-filter, iptables-mod-ipp2p, l7-protocols, iptables-mod-conntrack-extra
+Source: feeds/luci/contrib/package/freifunk-p2pblock
+Section: luci
+Architecture: brcm2708
+Installed-Size: 1317
+Filename: freifunk-p2pblock_3_brcm2708.ipk
+Size: 2110
+MD5Sum: 8f071c0d7bc9c4595ada99db3901d22a
+SHA256sum: 4a0d8b382d61457167a670575d821b7a7b467251a9a5ae90ba2095a4d66d4436
+Description:  Simple Addon for Freifunk which use iptables layer7-, ipp2p- and recent-modules 
+ to block p2p/filesharing traffic
+
+Package: freifunk-policyrouting
+Version: 6
+Depends: libc, librt, libpthread, ip
+Source: feeds/luci/contrib/package/freifunk-policyrouting
+Section: luci
+Architecture: brcm2708
+Installed-Size: 2277
+Filename: freifunk-policyrouting_6_brcm2708.ipk
+Size: 3102
+MD5Sum: c4819216095b11bfa203ec4981ea4e24
+SHA256sum: c4499d83c6a5acd1824713fda62daf4e67629c27c929edb505df894cca4e4f8b
+Description:  Allows you to send your own traffic via your own default gateway while sending traffic received from the mesh to a gateway in the mesh.
+
+Package: freifunk-watchdog
+Version: 8
+Depends: libc, librt, libpthread, libuci
+Source: feeds/luci/contrib/package/freifunk-watchdog
+Section: luci
+Architecture: brcm2708
+Installed-Size: 5654
+Filename: freifunk-watchdog_8_brcm2708.ipk
+Size: 6445
+MD5Sum: 25ed7a0d13328b789d09d889f235f7bc
+SHA256sum: e858585e1b3afb0d1861a7449cb26ef3db0bb4e722e653b7f067a349e208593a
+Description:  A watchdog daemon that monitors wireless interfaces to ensure the correct bssid and channel.
+ The process will initiate a wireless restart as soon as it detects a bssid or channel mismatch.
+
+Package: luci-app-ahcp
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, ahcpd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 20133
+Filename: luci-app-ahcp_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 20927
+MD5Sum: 2a71856b1027491988dda5b47577048e
+SHA256sum: 7ed2c3a4e76cce137c71f260d53f83dd8937daa74811d2a668e9d08c24d402d1
+Description:  LuCI Support for AHCPd
+
+Package: luci-app-commands
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 15405
+Filename: luci-app-commands_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 16135
+MD5Sum: 8e4c39ff98a807af6845c301b5ce4571
+SHA256sum: 82ec94a50db528ae16b36e22f84d19cbe8b5760c59cc51d4692d709dffeaf072
+Description:  LuCI Shell Command Module
+
+Package: luci-app-ddns
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, ddns-scripts
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 37397
+Filename: luci-app-ddns_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 38504
+MD5Sum: 43f8872440d77b03e5f4ca41f5bbf4dd
+SHA256sum: c3f7c689d125b43441e8faa700251bda2e282ceca31c572f123b963e9c7e7dc3
+Description:  Dynamic DNS configuration module
+
+Package: luci-app-diag-core
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 5689
+Filename: luci-app-diag-core_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 6454
+MD5Sum: 3dd9d797a0b95ce94ce6d0fec5f349b7
+SHA256sum: 7f377840b677f043d91432c4540f52d83b6c5f72328ef6e3a91c00f47b05ba3b
+Description:  LuCI Diagnostics Tools (Core)
+
+Package: luci-app-diag-devinfo
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-diag-core, smap, netdiscover, mac-to-devinfo, httping, smap-to-devinfo, netdiscover-to-devinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 27840
+Filename: luci-app-diag-devinfo_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 28699
+MD5Sum: 4cb437a9f44229a07765a59672cdbc1b
+SHA256sum: 81d3f9700e103076a6eb679d5220db811e46b00f8a4e13a27d13320873886768
+Description:  LuCI Diagnostics Tools (Device Info)
+
+Package: luci-app-dump1090
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, dump1090
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2285
+Filename: luci-app-dump1090_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3045
+MD5Sum: c162d8ae08740d824c33397efbff3efe
+SHA256sum: 7ebadb4144ce36c27023610b3a3f78874249cfb6713b9eaf0cf816179b2790d5
+Description:  LuCI Support for dump1090
+
+Package: luci-app-firewall
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, firewall
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 63419
+Filename: luci-app-firewall_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 64263
+MD5Sum: 86e15a4568c56dc0dfd446c3c4dd2dcf
+SHA256sum: 35cbdcb1863531f631261d128054a5b3db738d31b8dc41a7a81e95ffbf13919a
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-freifunk-diagnostics
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2415
+Filename: luci-app-freifunk-diagnostics_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3203
+MD5Sum: e3e4b3c818c0c6c9c5c76accf8b01efd
+SHA256sum: f04c5af34fa21cf038f58b4dd1c953f6542c6887f06dd7c8288e6bad96f4fb71
+Description:  Tools for network diagnosis like traceroute and ping
+
+Package: luci-app-freifunk-policyrouting
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, freifunk-policyrouting
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 7285
+Filename: luci-app-freifunk-policyrouting_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 8083
+MD5Sum: 6f08dc41b6409b7c9342a1fe42bc34a5
+SHA256sum: 8248d94af0bea4ae76f9de34f86880e37479a3f2b1ff2e8f1c9d3f15fe9933a0
+Description:  Policy routing for mesh traffic
+
+Package: luci-app-freifunk-widgets
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-mod-freifunk
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4540
+Filename: luci-app-freifunk-widgets_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 5325
+MD5Sum: 79dc24d61ebde5360ffae9263eb428aa
+SHA256sum: 2e3060f6a8a17001c25facbd370f4bb4010511afcb0bb7e3b91bd918672d18ad
+Description:  Widgets for the Freifunk index page
+
+Package: luci-app-hd-idle
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, hd-idle
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6126
+Filename: luci-app-hd-idle_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 6880
+MD5Sum: be8d0d39f5376c3dd1a77d3ada5f48fe
+SHA256sum: cff9e958f799ba08d53568d096ca24842297a98da466f46ae4e94ac3b0fafad7
+Description:  Hard Disk Idle Spin-Down module
+
+Package: luci-app-ltqtapi
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 1916
+Filename: luci-app-ltqtapi_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2666
+MD5Sum: 2ba332e61b712d11f78ff262becb5aef
+SHA256sum: 506b7e552a63d5395c4b42f5a767e79cfe9560d14dac7abe16c1e4a85476f396
+Description:  Lantiq voip
+
+Package: luci-app-meshwizard
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, meshwizard
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 15248
+Filename: luci-app-meshwizard_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 15998
+MD5Sum: 1b6b93f7926c6649ac5c03141c7f19c2
+SHA256sum: ef59d5636c32f12af715fe2a0113834856c450d0462599e0905a9cc74a6c1b04
+Description:  Shellscript based wizard to setup mesh networks
+
+Package: luci-app-minidlna
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, minidlna
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 20602
+Filename: luci-app-minidlna_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 21392
+MD5Sum: 3800f5bb97fca4d51fbc956db1cd40de
+SHA256sum: 4f1b5a4176fa2ed0bf7c57a550358650c76c70948fb27ed86705476a10034169
+Description:  LuCI Support for miniDLNA
+
+Package: luci-app-mmc-over-gpio
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, kmod-mmc-over-gpio
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 3820
+Filename: luci-app-mmc-over-gpio_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 4563
+MD5Sum: d256628541a416d8861d9ff9790ecc13
+SHA256sum: b325e9ea11888e1fe32deb128f89e27ff1161a0c528bf49456f5d242f4a2b17f
+Description:  MMC-over-GPIO configuration module
+
+Package: luci-app-multiwan
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-firewall, multiwan
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 15040
+Filename: luci-app-multiwan_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 15807
+MD5Sum: f13715a006024c94ba2055f037d0a782
+SHA256sum: 0553e47192aadd4e9732706f85769223565d16f2240a3349b69ad56e8f70a22a
+Description:  LuCI Support for the OpenWrt MultiWAN agent
+
+Package: luci-app-ntpc
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, ntpclient
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 7704
+Filename: luci-app-ntpc_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 8498
+MD5Sum: 75c113c1c6bd55fdb0d399afa04de88c
+SHA256sum: 595e4e95563da971ba5f4e98488ffc8fa88342a393ad458d69309f673f37b294
+Description:  NTP time synchronisation configuration module
+
+Package: luci-app-ocserv
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, ocserv, certtool
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4234
+Filename: luci-app-ocserv_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 5001
+MD5Sum: 11f2b8f42a77c66e7291b06b913bcf57
+SHA256sum: 863d180dc8ff3e03ea3ec6e9495025a7dd0e6610a94343e4689f4b9d758339ca
+Description:  LuCI Support for OpenConnect VPN
+
+Package: luci-app-olsr-services
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-olsr, olsrd, olsrd-mod-nameservice
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2292
+Filename: luci-app-olsr-services_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3084
+MD5Sum: 35b4dce4f09c22363ff337aadd11025c
+SHA256sum: 70aad315cc63a5fbef0c5de3f7ac0f38ceb5bfd22d0f3a45e456f2da5e6056b8
+Description:  Show services announced with the nameservice plugin
+
+Package: luci-app-olsr-viz
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-olsr, olsrd, olsrd-mod-txtinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 11348
+Filename: luci-app-olsr-viz_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 12140
+MD5Sum: 55e55b761d58f8e34b80df86f6302d0d
+SHA256sum: 6f5e91de4b71daa483158226aca7eebf6f6a8fdd060bbf2b11358e9df983e638
+Description:  OLSR Visualisation
+
+Package: luci-app-olsr
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, olsrd, olsrd-mod-jsoninfo, luci-lib-luaneightbl
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 63760
+Filename: luci-app-olsr_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 64563
+MD5Sum: a1e3c985eabcf2289ca753e0b55c20fc
+SHA256sum: 11e5c33a516cadcdf3bdc8081718caab62173dd0a77bc9f9cd5bac1ecda242f0
+Description:  OLSR configuration and status module
+
+Package: luci-app-openvpn
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, openvpn
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 62891
+Filename: luci-app-openvpn_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 63714
+MD5Sum: e85b141602d06b7954bf03e8dc57b5f1
+SHA256sum: f28b186d9c9d971222bd88b45e11beb6e55879bac420074a920ce39c213ef333
+Description:  LuCI Support for OpenVPN
+
+Package: luci-app-p2pblock
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-firewall, freifunk-p2pblock
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6353
+Filename: luci-app-p2pblock_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7163
+MD5Sum: 514f5cc9d9ab3bd2b7d85f899cf63c7e
+SHA256sum: d51eee9bd926c440b87f638c28c2a26d2d9d900438566d8be4f796e0d0c5a62c
+Description:  LuCI Support for the Freifunk P2P-Block addon
+
+Package: luci-app-p910nd
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, p910nd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6604
+Filename: luci-app-p910nd_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7392
+MD5Sum: 96db735c5004757ef8a4a5b52915c772
+SHA256sum: aac521e1575e3acea50c38ca558c28ae76e9088814eeb76f655ab591db64c837
+Description:  p910nd - Printer server module
+
+Package: luci-app-pbx-voicemail
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-pbx, asterisk18, msmtp, coreutils-base64
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 14298
+Filename: luci-app-pbx-voicemail_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 15102
+MD5Sum: cedea04f175189134298d0216a9c4230
+SHA256sum: acd97f755bc778d1884ca3e2f3a3e4075c5ae2a982f409c08dd51da0463c1968
+Description:  LuCI PBX Administration Voicemail Support
+
+Package: luci-app-pbx
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, asterisk18, asterisk18-app-authenticate, asterisk18-app-disa, asterisk18-app-setcallerid, asterisk18-app-system, asterisk18-chan-gtalk, asterisk18-codec-a-mu, asterisk18-codec-alaw, asterisk18-func-cut, asterisk18-res-clioriginate, asterisk18-func-channel, asterisk18-chan-local, asterisk18-app-record, asterisk18-app-senddtmf, asterisk18-res-crypto
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 96708
+Filename: luci-app-pbx_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 97689
+MD5Sum: c618cad54e535d47e43e5465fc9734ce
+SHA256sum: bb3795d5305cc7205f0337c64e2d06b64546fe352e30519a24784e8bcf74bb66
+Description:  LuCI PBX Administration
+
+Package: luci-app-polipo
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, polipo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 23444
+Filename: luci-app-polipo_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 24199
+MD5Sum: 957baefb980f71922f6085716af92fbf
+SHA256sum: 26ec8c209963406f96765006accf33f30fd093b4ada10beda09d7fa431c2b241
+Description:  LuCI Support for the Polipo Proxy
+
+Package: luci-app-qos
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, qos-scripts
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 10941
+Filename: luci-app-qos_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 11694
+MD5Sum: 08e44cc693280442299d8339e49da751
+SHA256sum: 51612d72d80d987b876e141e3ea2b21cd4f68b8fe5de281930b24e8dffdd4d5c
+Description:  Quality of Service configuration module
+
+Package: luci-app-radvd
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, radvd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 30613
+Filename: luci-app-radvd_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 31399
+MD5Sum: ab4eb05215a3ee6f49423a4fff263613
+SHA256sum: 4ab0df8477deaba20113e24e317e3c5afab6743cb16c82378e249d87995042d7
+Description:  LuCI Support for Radvd
+
+Package: luci-app-samba
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, samba36-server
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 12451
+Filename: luci-app-samba_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 13251
+MD5Sum: fafe0185910729707ff94663637406a5
+SHA256sum: f9b0660e38b8c4e6fb7af78e2ea0564ed035649188cdbe6bc0178edc50787238
+Description:  Network Shares - Samba SMB/CIFS module
+
+Package: luci-app-shairplay
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, shairplay
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 1568
+Filename: luci-app-shairplay_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2312
+MD5Sum: 6657ecc934192053a515b32e68208fdb
+SHA256sum: 42640612fe9a4a2f6bea9fdb734706f0739fa15ad5bb58f6e61aaf5a9fed7df5
+Description:  LuCI Support for Shairplay
+
+Package: luci-app-shairport
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, shairport
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2124
+Filename: luci-app-shairport_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2889
+MD5Sum: f160c6dc186dc78bab868d3009a31ec5
+SHA256sum: d39c69ae8f971e175324f4abec5e1a55586b5b77e74e6a43616228bb00021bb3
+Description:  LuCI Support for Shairport
+
+Package: luci-app-siitwizard
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, kmod-siit
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 3870
+Filename: luci-app-siitwizard_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 4666
+MD5Sum: 0190c60966d5654cc1bae164ed8e9761
+SHA256sum: 954f0b065aba05ca6fc94503973dd5ff31b052db5e4d05ebe6328cc2387b220e
+Description:  SIIT IPv4-over-IPv6 configuration wizard
+
+Package: luci-app-splash
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-lib-nixio, tc, kmod-sched, iptables-mod-nat-extra, iptables-mod-ipopt
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 41994
+Filename: luci-app-splash_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 42951
+MD5Sum: 1044d217044dc446ffafd3e956533be1
+SHA256sum: fbe9e0c37ec5c7e45f32558ad6084af522fcd487b0e558ca95d6b75b36c24b27
+Description:  Freifunk DHCP-Splash application
+
+Package: luci-app-statistics
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, collectd, rrdtool1, collectd-mod-rrdtool, collectd-mod-iwinfo, collectd-mod-interface, collectd-mod-load, collectd-mod-network
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 96154
+Filename: luci-app-statistics_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 97089
+MD5Sum: ecce0e5d9e82ed144ddd6609a1f0bd53
+SHA256sum: 8dd6406216b5453243854f41f83703120000dab235f97054b20f85a7e03d1200
+Description:  LuCI Statistics Application
+
+Package: luci-app-tinyproxy
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, tinyproxy
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 25469
+Filename: luci-app-tinyproxy_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 26226
+MD5Sum: 15864dd28381d393e5774303b56e5807
+SHA256sum: eaaadb000ffd569b8a3ab55a143db5f04617a4036bd847bb71dea54e21b8f4fa
+Description:  Tinyproxy - HTTP(S)-Proxy configuration
+
+Package: luci-app-transmission
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, transmission-daemon
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 26727
+Filename: luci-app-transmission_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 27541
+MD5Sum: 6f6a89901a041fca33924e7c4d0c6bfa
+SHA256sum: d4675943a23b5931f83045308fb19ac9593117b4d56c309de708fb3cac37ad29
+Description:  LuCI Support for Transmission
+
+Package: luci-app-udpxy
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, udpxy
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 1601
+Filename: luci-app-udpxy_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2352
+MD5Sum: 8803a64ea87525ac53813de8bacf0e11
+SHA256sum: 1373f02f526632b7f60130a8471c77b61992c6e87ad4723f15a2c19b083115eb
+Description:  LuCI Support for udpxy
+
+Package: luci-app-upnp
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, miniupnpd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 19782
+Filename: luci-app-upnp_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 20584
+MD5Sum: 9f4d5dbcd482a5327573673520656d0d
+SHA256sum: b69a455bc2b3c9d1deb1395dcde85212fcc45a25aea9f015b073b7ec6027c32e
+Description:  Universal Plug & Play configuration module
+
+Package: luci-app-ushare
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, ushare
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6948
+Filename: luci-app-ushare_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7737
+MD5Sum: 501551452440e449447bfbcdd413ac84
+SHA256sum: 7c62e3fc9ff9ac3cf89fa0c6f70d2f37c053f92c7de10cebd44e336de06acbfb
+Description:  uShare - UPnP A/V & DLNA Media Server
+
+Package: luci-app-vnstat
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, vnstat, vnstati
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 9594
+Filename: luci-app-vnstat_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 10346
+MD5Sum: 06616e6c2f805fa19c1aeabb9e57f575
+SHA256sum: 39968af606386fe67bccdb065f49797e2e42928f7c1b8316519384da6ee51468
+Description:  LuCI Support for VnStat
+
+Package: luci-app-voice-core
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2183
+Filename: luci-app-voice-core_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2918
+MD5Sum: d85d4d44e87f86c0f064634aaee6a82a
+SHA256sum: 1a65e1f4d228a61a26fab2c459ffe80bdcc0cf43a100e7fc632cfeb2a34bbe6f
+Description:  LuCI Voice Software (Core)
+
+Package: luci-app-voice-diag
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-app-diag-devinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4613
+Filename: luci-app-voice-diag_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 5390
+MD5Sum: ab49110f560702eb1fc978fa40ecb9d8
+SHA256sum: 8bab72138fd87043c7c2edf6bf886de4d551fe0b79eb87c99df6b89527ddfba2
+Description:  LuCI Voice Software (Diagnostics)
+
+Package: luci-app-watchcat
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, watchcat
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 9327
+Filename: luci-app-watchcat_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 10123
+MD5Sum: b150b980cdf48150c1414a44930e22d4
+SHA256sum: 45fd7038d9f6df68f54d2952e7554a0721e56af95d3b8ec665925dbb1d4f2588
+Description:  LuCI Support for Watchcat
+
+Package: luci-app-wol
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, etherwake
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 8846
+Filename: luci-app-wol_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 9642
+MD5Sum: 167dec33d6e16d0d85a333af34cc92f8
+SHA256sum: e37bb56c2fb9fa105465244dd77d8fc3005bcd414acfbfbcbc671d9d920bfce3
+Description:  LuCI Support for Wake-on-LAN
+
+Package: luci-app-wshaper
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, wshaper
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 7366
+Filename: luci-app-wshaper_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 8160
+MD5Sum: e90932b9e8f0650974f867994ba0785a
+SHA256sum: 7658a2aa7256d956922a0a6e91fa05dea8dc984cd68dd3affe4e9902f314174b
+Description:  LuCI Support for wshaper
+
+Package: luci-base
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, lua, libuci-lua, libubus-lua
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 140314
+Filename: luci-base_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 141226
+MD5Sum: c8896d111234ad5a5e424dcf05d3e83f
+SHA256sum: 1cdacfae13a47d3694f3fdcf2d563a5d71ed9380c7a4a3b220520ae4a6bcca2e
+Description:  LuCI core libraries
+
+Package: luci-i18n-catalan
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 16427
+Filename: luci-i18n-catalan_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 17225
+MD5Sum: b93e0a4f5aba1ff765157513f800aa3c
+SHA256sum: 6f47eea1eed2efbe784f99e2401de011c6cc106cfac359ce5277d16192f57d6b
+Description:  Catalan (by Eduard Duran)
+
+Package: luci-i18n-chinese
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 19562
+Filename: luci-i18n-chinese_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 20366
+MD5Sum: d21b21d685d5403959f676fb744f93be
+SHA256sum: 10be6d1d377860b406606ce6ece28542e649c00db959bd842707aacaf0c0ce39
+Description:  Chinese (by Chinese Translators)
+
+Package: luci-i18n-english
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 769
+Filename: luci-i18n-english_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 1515
+MD5Sum: a915077cdb40c677d8672be1a53c1871
+SHA256sum: ff675fc0307cfbb3c4a3f8438391963247eb131af8e3c51de2a86dac47dcdc4f
+Description:  English
+
+Package: luci-i18n-french
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 21229
+Filename: luci-i18n-french_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 22020
+MD5Sum: 2ba1c79996c76508eb05d3ce769d848b
+SHA256sum: 598856f537d87e8d49b6d39a2657b37fed410cd9425c282028c0d2c8a3f66b3d
+Description:  French (by Florian Fainelli)
+
+Package: luci-i18n-german
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 20480
+Filename: luci-i18n-german_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 21231
+MD5Sum: aa7672adca4f0a117609ef446db1aad1
+SHA256sum: cfddf878d789103b948cf666ddfb817cc1af89b189221a23d64163ee0d275297
+Description:  German
+
+Package: luci-i18n-greek
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 17463
+Filename: luci-i18n-greek_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 18278
+MD5Sum: 08547fbc28179e756837e1266c444027
+SHA256sum: 8c837634b83602824f966715f171d9ed6d9695608a6f52967dcf11cfd5060ec7
+Description:  Greek (by Vasilis Tsiligiannis)
+
+Package: luci-i18n-hebrew
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6988
+Filename: luci-i18n-hebrew_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7777
+MD5Sum: c57b3812fbfcee9b8731e3ebd1ac255a
+SHA256sum: c18aeda1f352d2fae408bebbf06a56d7a669057c20afb9285e706966d1f67e5e
+Description:  Hebrew
+
+Package: luci-i18n-hungarian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 21896
+Filename: luci-i18n-hungarian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 22661
+MD5Sum: 0b651370317edc6e749a4d1f0ee104f8
+SHA256sum: e3f87fe93a72d884e444c7c0ca7141dbcd97ba9c0b791660fd0554317608fbf2
+Description:  Hungarian
+
+Package: luci-i18n-italian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 16826
+Filename: luci-i18n-italian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 17622
+MD5Sum: c7cbffcf6d9dc0e63b7742071b0e35b5
+SHA256sum: 165e5cb6104a14ea5cbee42b4c5037be5329f94b7de332e3d9a864348da9a062
+Description:  Italian (by Matteo Croce)
+
+Package: luci-i18n-japanese
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 20545
+Filename: luci-i18n-japanese_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 21309
+MD5Sum: 4018600a7d6f48b0048f2ba1a232c08c
+SHA256sum: b8b09f093d1d0d974451e23ee2c42b89992bdf3188f534a8363f28bd81081428
+Description:  Japanese (by Tsukasa Hamano)
+
+Package: luci-i18n-malay
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 7518
+Filename: luci-i18n-malay_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 8320
+MD5Sum: 0e8e7813ae2d0af16b293a5f44d0f02e
+SHA256sum: 1f1e8d9c863f68597be5cc14024c771954746a60975003987dfe7ba2c1d05f9e
+Description:  Malay (by Teow Wai Chet)
+
+Package: luci-i18n-norwegian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 20461
+Filename: luci-i18n-norwegian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 21230
+MD5Sum: 0c8dbc6972b2907b93a0690c282652c4
+SHA256sum: db5a689fc67c347992ccb5e8098caa03419fa38031fdb3a16f052987d6b7b133
+Description:  Norwegian (by Lars Hardy)
+
+Package: luci-i18n-polish
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 21713
+Filename: luci-i18n-polish_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 22483
+MD5Sum: 884edfaf5008938ef226d31190d74d21
+SHA256sum: fd1c82aa66a2a7506a9ed49ad02ddbf64e97ad16edd0c9dbcf0e14996eaa730d
+Description:  Polish
+
+Package: luci-i18n-portuguese-brazilian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 21721
+Filename: luci-i18n-portuguese-brazilian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 22530
+MD5Sum: 10211ba0f79de1f144ee67fd3cc3470f
+SHA256sum: 7eb0db60e28e279fb26bf8b093eb300d64659c336937fed3157dec1335959ef9
+Description:  Portuguese (Brazilian) (by Carlos Cesario)
+
+Package: luci-i18n-portuguese
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 18844
+Filename: luci-i18n-portuguese_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 19597
+MD5Sum: d826f6550bd1d54b44bf8e9123002966
+SHA256sum: 8f3d2ce58aa7e250177411ecabc2a863fa170c974d554c20df82d49a4d49b2bf
+Description:  Portuguese (by Jose Monteiro)
+
+Package: luci-i18n-romanian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 10536
+Filename: luci-i18n-romanian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 11281
+MD5Sum: 7befebf335c0e39d80a543c6052a28de
+SHA256sum: 97cb87581ea5881f8e73e293fa231ea12b6f171d8071576c48330c0dbcec1601
+Description:  Romanian
+
+Package: luci-i18n-russian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 24437
+Filename: luci-i18n-russian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 25206
+MD5Sum: 10c28b7548d8f52179e15c2805cab91c
+SHA256sum: b2c94d5be7f68337588d490b04df9be424da8d3b7fc11d9d8e5bc928f6a6bc7d
+Description:  Russian (by Skryabin Dmitry)
+
+Package: luci-i18n-spanish
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 21049
+Filename: luci-i18n-spanish_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 21839
+MD5Sum: 3b78a6fd08b629781e49aafd47d90ba8
+SHA256sum: 366dfed5c91949f6bba534a7ec9b31bc2ac7c472a9098d1e5bb065616f1a9aa3
+Description:  Spanish (by Guillermo Javier Nardoni)
+
+Package: luci-i18n-ukrainian
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 24924
+Filename: luci-i18n-ukrainian_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 25689
+MD5Sum: fa1d7e77d8bcc8f56e15bc0afe47efff
+SHA256sum: 7f152b97374e02596bbc45835dbfea452477ea286ebebcd6e5204cd5edaa458e
+Description:  Ukrainian
+
+Package: luci-i18n-vietnamese
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 6567
+Filename: luci-i18n-vietnamese_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7373
+MD5Sum: fa02a32639a9d79c3f1348c2580d070e
+SHA256sum: 9def557eecac866b39f020850e1f51206b2e379ffbad4c3b3a55ace4311ca7be
+Description:  Vietnamese (by Hong Phuc Dang)
+
+Package: luci-lib-httpclient
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base, luci-base, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4906
+Filename: luci-lib-httpclient_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 5649
+MD5Sum: 092558e11c741282371822a987579f60
+SHA256sum: c9ae6e78ea123dcf76574271ba121b5e14a6106431bccff565f59e06bb317a85
+Description:  HTTP(S) client library
+
+Package: luci-lib-json
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4054
+Filename: luci-lib-json_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 4805
+MD5Sum: 25b10cd2db2d99b283bb8e153a42584e
+SHA256sum: 555dfcda2c1ea0d4335ca2d0ce2495a9da6730d2066c23b2e7b397a356263f7d
+Description:  LuCI JSON library
+
+Package: luci-lib-luaneightbl
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2585
+Filename: luci-lib-luaneightbl_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3375
+MD5Sum: ea64a1892b2d74ae881a814972887356
+SHA256sum: 69b2fe5189e73b86f23b844b1d97d8794804bb91aa97a710254f14991724f246
+Description:  neightbl - Lua lib for IPv6 neighbors
+
+Package: luci-lib-nixio
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 29271
+Filename: luci-lib-nixio_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 29870
+MD5Sum: 020f657e4dfc7ffb3ad5cff117722eb4
+SHA256sum: 8d01d12f74435c679231296d1c2dceb7831987be8054e0e2dcec707d4750abf2
+Description:  NIXIO POSIX library
+
+Package: luci-lib-px5g
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 27750
+Filename: luci-lib-px5g_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 28440
+MD5Sum: d84b32ded4006b41c307415485c5dd87
+SHA256sum: 324170b6fbe354355b5243e54a0294d5b66b4a6d99f307acae1fd9dd7c1d2b28
+Description:  RSA/X.509 Key Generator (required for LuCId SSL support)
+
+Package: luci-mod-admin-full
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 68593
+Filename: luci-mod-admin-full_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 69514
+MD5Sum: d300bac73a5f15787c87e9a20b7d63d4
+SHA256sum: d885fff616d97fc358d152cdb503220b72204c2fe55ba93b24bbf2d5b5654067
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-failsafe
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 4151
+Filename: luci-mod-failsafe_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 4897
+MD5Sum: 29c69f449355152676ad68f7c5cd31fb
+SHA256sum: ff0fab65e011b08546880e9104a543ad21268e3ac29e4212440d636111caed7a
+Description:  LuCI Fail-Safe - Fail-Safe sysupgrade module
+
+Package: luci-mod-freifunk-community
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, iptables-mod-nat-extra, iptables-mod-ipopt, luci-app-splash, luci-i18n-german, olsrd, olsrd-mod-dyn-gw-plain, olsrd-mod-jsoninfo, olsrd-mod-nameservice, olsrd-mod-watchdog, kmod-tun, ip, freifunk-watchdog, luci-app-olsr, luci-app-olsr-services, freifunk-gwcheck, freifunk-mapupdate
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 183
+Filename: luci-mod-freifunk-community_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 1063
+MD5Sum: ace70808c6990cfd9ee7e483ad3718c1
+SHA256sum: c0a221863aae99efb18e816b625e78e2223e72945d4775398337e05134fe7924
+Description:  Freifunk Community Meta-Package
+
+Package: luci-mod-freifunk
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-mod-admin-full, luci-lib-json, freifunk-firewall, freifunk-common
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 51148
+Filename: luci-mod-freifunk_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 52074
+MD5Sum: 3f7886851aa3e2857d6336e1b99e8ad0
+SHA256sum: f4674bacb992a2deafc5a68385a480e19412016d44fdf120ae47313c3ab02a6f
+Description:  LuCI Freifunk module
+
+Package: luci-mod-rpc
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-lib-json
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2659
+Filename: luci-mod-rpc_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3420
+MD5Sum: 9b76cdb8cbf20950a169e4635f82cb38
+SHA256sum: c2b882126855972e9aa63e66b09a06fcfee7ec09282683ec5783c69b3dea69dd
+Description:  LuCI RPC - JSON-RPC API
+
+Package: luci-proto-3g
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, comgt
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 1841
+Filename: luci-proto-3g_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2576
+MD5Sum: e17cd899c3da9acf21d9de62b7b22a55
+SHA256sum: 43f33825449bafd6dd564b7acaaea79d3b84c926e0cfeea06c3436bf26526464
+Description:  Support for 3G
+
+Package: luci-proto-ipv6
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 3463
+Filename: luci-proto-ipv6_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 4245
+MD5Sum: 95c547cf9b6f9890846f186446fc0822
+SHA256sum: b1b3d2f64b2b4bf87a226efac2c3a1ed4f46d503765e3a0dc085868f654f0dae
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-openconnect
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, openconnect
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 1647
+Filename: luci-proto-openconnect_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2403
+MD5Sum: 7dfe005048ab05216fc2cc651eca4f1e
+SHA256sum: 192f0a39145122b38bb70d8f66a469d2049cb2f0a67abf7672233b8c9f7f07b8
+Description:  Support for OpenConnect VPN
+
+Package: luci-proto-ppp
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2994
+Filename: luci-proto-ppp_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 3756
+MD5Sum: a4752269f3ea4e5feec55b86a5c5d1a0
+SHA256sum: c8b4f4a3ad4aa46fb39f32a5ba22f00d28fdba5f5a47c55b6d0f99957840d4e2
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-proto-relay
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, relayd
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 2201
+Filename: luci-proto-relay_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 2960
+MD5Sum: 6ffed4ba06ce6cd1ebbcd3e5649f429f
+SHA256sum: 17f96dedcbfe07a02be749a2eb2a8690e88338b2c9b986de32f8cdf1acdb5723
+Description:  Support for relayd pseudo bridges
+
+Package: luci-ssl
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci, libustream-polarssl, px5g
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 105
+Filename: luci-ssl_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 869
+MD5Sum: eb8bf900d5973352025ac700c68eab6c
+SHA256sum: 603c07b20961a4401ab5be9ecb08ef819b819602e49cae1c4872cc577b026391
+Description:  Standard OpenWrt set with HTTPS support
+
+Package: luci-theme-bootstrap
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 13061
+Filename: luci-theme-bootstrap_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 13786
+MD5Sum: 65b17ff798c4804052cc439094340b4a
+SHA256sum: f530a069c31cae157dbd160d7ee4815e7057c3c155785288127002d8401ccbba
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-freifunk-bno
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: Stefan Pirwitz <stefan-at-freifunk-bno-dot-de>
+Architecture: brcm2708
+Installed-Size: 15046
+Filename: luci-theme-freifunk-bno_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 15769
+MD5Sum: a7f3d86ec5339a2608184c4be5642189
+SHA256sum: d6a945c888736b2eb4122be935376e59d753b6da70c47f9d5efb9c051a28cd52
+Description:  Freifunk Berlin Nordost Theme
+
+Package: luci-theme-freifunk-generic
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, luci-base
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: Manuel Munz <freifunk-at-somakoma-dot-de>
+Architecture: brcm2708
+Installed-Size: 12874
+Filename: luci-theme-freifunk-generic_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 13638
+MD5Sum: 5f3d216efa40fe122df2800453399e41
+SHA256sum: dec5911f9d2bd4a38172fe4c8ca8211598775a4df7f3005a30827f379b3e3a03
+Description:  Freifunk Generic Theme
+
+Package: luci-theme-openwrt
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 7049
+Filename: luci-theme-openwrt_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 7839
+MD5Sum: 53813f416edc5bf2a0c9c0ed43e8d49e
+SHA256sum: ad94fd9028fbf99e5cc599c29407080037bbe37a0d70afc189c622caab4f587f
+Description:  OpenWrt.org
+
+Package: luci
+Version: git-14.328.38244-91532de-1
+Depends: libc, librt, libpthread, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: brcm2708
+Installed-Size: 105
+Filename: luci_git-14.328.38244-91532de-1_brcm2708.ipk
+Size: 938
+MD5Sum: ea6cdf6774a070ab53fa23bfcdde2efc
+SHA256sum: 3184631d4c0583995385f2eeec440044fb7f2448662812ff2c517029b679fdab
+Description:  Standard OpenWrt set including full admin with ppp support and the default OpenWrt theme
+
+Package: meshwizard
+Version: 0.1.0
+Depends: libc, librt, libpthread, firewall
+Source: feeds/luci/contrib/package/meshwizard
+Section: luci
+Architecture: brcm2708
+Installed-Size: 12680
+Filename: meshwizard_0.1.0_brcm2708.ipk
+Size: 13411
+MD5Sum: fd07dd6ee9c50757eb84cbf842bed1eb
+SHA256sum: 4e5639daec2e9ae267824c9bdc5a8b5cd3cede785945e80b487caa0b1f5ce2ae
+Description:  A shellscript based wizard to simplify the setup of a typical mesh node (e.g. for Freifunk.net)
+

@@ -1,0 +1,806 @@
+Package: ahcpd
+Version: 0.53-2
+Depends: libc, librt, libpthread, kmod-ipv6, ip, librt
+Source: feeds/routing/ahcpd
+License: MIT
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm2708
+Installed-Size: 21295
+Filename: ahcpd_0.53-2_brcm2708.ipk
+Size: 22208
+MD5Sum: 5abe33590472f643f9e79fe903f21e3b
+SHA256sum: 3325d51a45fec70ea1d9dc2fe6592cfc346090ee14330c5b881d7603d9da78cc
+Description:  Ahcpd is a daemon for configuring an IPv6 network using the Ad-Hoc
+ Configuration Protocol (AHCP).  AHCP is designed for wireless mesh
+ networks, where IPv6 autoconfiguration and DHCPv6 do not work, but may
+ also be used on wired networks.
+
+Package: alfred
+Version: 2014.3.0-0
+Depends: libc, librt, libpthread, kmod-ipv6, librt
+Source: feeds/routing/alfred
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 17922
+Filename: alfred_2014.3.0-0_brcm2708.ipk
+Size: 19061
+MD5Sum: d9852f7454c1bac0bb66674a83a9eef0
+SHA256sum: ccbb964ee8267112332fb21d5110d4a1340a6f2be886f8d9a97e617ece9d9607
+Description:  alfred is a user space daemon for distributing arbitrary local information over
+ the mesh/network in a decentralized fashion. This data can be anything which
+ appears to be useful - originally designed to replace the batman-adv
+ visualization (vis), you may distribute hostnames, phone books, administration
+ information, DNS information, the local weather forecast ...
+ 
+ alfred runs as daemon in the background of the system. A user may insert
+ information by using the alfred binary on the command line, or use special
+ programs to communicate with alfred (done via unix sockets). alfred then takes
+ care of distributing the local information to other alfred servers on other
+ nodes. This is done via IPv6 link-local multicast, and does not require any
+ configuration. A user can request data from alfred, and will receive the
+ information available from all alfred servers in the network.
+
+Package: babeld
+Version: 1.5.1-1
+Depends: libc, librt, libpthread, kmod-ipv6, librt
+Source: feeds/routing/babeld
+License: MIT
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm2708
+Installed-Size: 45333
+Filename: babeld_1.5.1-1_brcm2708.ipk
+Size: 46336
+MD5Sum: f57f8cbcab632c1d424ab2ea404737d0
+SHA256sum: 89ec7750ffc62e0376f4329f34560583ad919856d8f56ab3a2034ae3c57e8773
+Description:  Babel is a loop-avoiding distance-vector routing protocol roughly based
+ on DSDV and AODV, but with provisions for link cost estimation and
+ redistribution of routes from other routing protocols.
+ While it is optimised for wireless mesh networks, Babel will also work
+ efficiently on wired networks. It will generate between 1.2 and 2.4 times
+ the amount of routing traffic that RIPng would generate, while
+ never counting to infinity.
+
+Package: batctl
+Version: 2014.3.0-1
+Depends: libc, librt, libpthread, kmod-batman-adv, libnl-tiny
+Source: feeds/routing/batctl
+License: GPL-2.0
+Section: net
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: brcm2708
+Installed-Size: 22487
+Filename: batctl_2014.3.0-1_brcm2708.ipk
+Size: 23382
+MD5Sum: ec868a6805130d7099731c63c593b2fa
+SHA256sum: c3271106ccf524d35657664ea6902b5f624b1ed33171c7ddd6d713933172256d
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2014.3.0 of the user space utility.
+
+Package: batmand
+Version: r1439-2
+Depends: libc, librt, libpthread, libpthread, kmod-tun
+Source: feeds/routing/batmand
+License: GPL-2.0
+Section: net
+Maintainer: Marek Lindner <lindner_marek@yahoo.de>
+Architecture: brcm2708
+Installed-Size: 39176
+Filename: batmand_r1439-2_brcm2708.ipk
+Size: 39957
+MD5Sum: cb4d1157ee99e090f1676d25c2483a23
+SHA256sum: 89b0e002764385182fd2b70040314c1e06b6653fcd79ff5a2a0d9719d4e7af81
+Description:  B.A.T.M.A.N. layer 3 routing daemon
+
+Package: bird4-uci
+Version: 0.2
+Depends: libc, librt, libpthread, bird4, libuci, uci
+Source: feeds/routing/bird-openwrt/bird4-openwrt
+License: GPL-3.0+
+Section: net
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm2708
+Installed-Size: 4076
+Filename: bird4-uci_0.2_brcm2708.ipk
+Size: 4901
+MD5Sum: d46a29233fc5d9660fe8178e4274d47d
+SHA256sum: c91d4b9eb8d91fd990e8d497f915a7da7475a617a6734ea3399dff739d19d1e2
+Description:  bird4 UCI integration module
+
+Package: bird4
+Version: 1.4.3-1
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 161504
+Filename: bird4_1.4.3-1_brcm2708.ipk
+Size: 162539
+MD5Sum: 56e5675954dfc3a71dd258c772a9fbf3
+SHA256sum: f41c283c82b7e4782217b47224535ac14475dcaad69766a2e782e6684dc401b9
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv4 version of BIRD, it supports OSPFv2, RIPv2 and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: bird6-uci
+Version: 0.2
+Depends: libc, librt, libpthread, bird6, libuci, uci
+Source: feeds/routing/bird-openwrt/bird6-openwrt
+License: GPL-3.0+
+Section: net
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm2708
+Installed-Size: 4227
+Filename: bird6-uci_0.2_brcm2708.ipk
+Size: 5055
+MD5Sum: 4481a63eb05f8599d180bf40cb814e96
+SHA256sum: 3358de147b3c27e175cf770bf52a9e0f66cc9299d5ba1241a0df0011568ff281
+Description:  bird6 UCI integration module
+
+Package: bird6
+Version: 1.4.3-1
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 181228
+Filename: bird6_1.4.3-1_brcm2708.ipk
+Size: 182267
+MD5Sum: fa032834203d1b7e0d2bcf35494b6f09
+SHA256sum: 50f50a047aa9a88d4c278b2dfc81e928fb69b7f1846bdbb2a62bbfd5347ef2a5
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv6 version of BIRD, it supports OSPFv3, RIPng and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: birdc4
+Version: 1.4.3-1
+Depends: libc, librt, libpthread, libreadline, libncurses, bird4
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 10709
+Filename: birdc4_1.4.3-1_brcm2708.ipk
+Size: 11753
+MD5Sum: ce25001c61c9e49ce238e5ccc5785c1d
+SHA256sum: bcd9b7b02d07eaab95f05435bbd85f2e62125767c935f29afa27fd643709aeda
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: birdc6
+Version: 1.4.3-1
+Depends: libc, librt, libpthread, libreadline, libncurses, bird6
+Source: feeds/routing/bird
+License: GPL-2.0
+Section: net
+Architecture: brcm2708
+Installed-Size: 11774
+Filename: birdc6_1.4.3-1_brcm2708.ipk
+Size: 12832
+MD5Sum: f7701f742de0202ad352a6c95e7bed06
+SHA256sum: 0b877db73b8e5d217c389a97ce4b0bb41caf9babe56f643736cb88cb7b776acb
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: bmx6-json
+Version: r2014112401-4
+Depends: libc, librt, libpthread, bmx6, libjson
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm2708
+Installed-Size: 6805
+Filename: bmx6-json_r2014112401-4_brcm2708.ipk
+Size: 7550
+MD5Sum: 1108ba8a57386d49dedc6ac1e0fbefd0
+SHA256sum: aa2987ef4426e01fd7e2a1b3249c0b6f8a68b4a57dafeb84be20590f6f370add
+Description:  json plugin based on jsonc
+
+Package: bmx6-sms
+Version: r2014112401-4
+Depends: libc, librt, libpthread, bmx6
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm2708
+Installed-Size: 5435
+Filename: bmx6-sms_r2014112401-4_brcm2708.ipk
+Size: 6167
+MD5Sum: 63d224f679858081481eb824602007a9
+SHA256sum: 716b84410b3ccc51402e9af126c38d2156cff44984a324f1ae88c8632b3a1e5d
+Description:  sms plugin
+
+Package: bmx6-table
+Version: r2014112401-4
+Depends: libc, librt, libpthread, bmx6
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm2708
+Installed-Size: 8765
+Filename: bmx6-table_r2014112401-4_brcm2708.ipk
+Size: 9521
+MD5Sum: ee7ff9d6a8ea45e5395cefa16a255ca4
+SHA256sum: 19f8e9f65df22e158ee389bf0bf32845b4bbfbfcd6577738da278d906b520ff4
+Description:  bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
+
+Package: bmx6-uci-config
+Version: r2014112401-4
+Depends: libc, librt, libpthread, bmx6, libuci
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm2708
+Installed-Size: 8729
+Filename: bmx6-uci-config_r2014112401-4_brcm2708.ipk
+Size: 9532
+MD5Sum: 360fdcf638c06d92bf3f88fc0301a8b5
+SHA256sum: ea8ebb71c53989302b38f990200014ff94cfd28a1529f58a73538ccc78d40e1b
+Description:  configuration plugin based on uci (recommended!)
+
+Package: bmx6
+Version: r2014112401-4
+Depends: libc, librt, libpthread, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+Source: feeds/routing/bmx6
+License: GPL-2.0
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: brcm2708
+Installed-Size: 136141
+Filename: bmx6_r2014112401-4_brcm2708.ipk
+Size: 136897
+MD5Sum: 9ac652309289e94b7704bfc340679bfb
+SHA256sum: d739f93a53553d21ff1590e0478af3b41fefb62701b8240bc66db4a53c1a840a
+Description:  BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
+
+Package: kmod-batman-adv
+Version: 3.14.25+2014.3.0-1
+Depends: kernel (=3.14.25-1-b3ee114fb6e21c16e31cc8bde6d0d03e), kmod-lib-crc16, kmod-crypto-core, kmod-crypto-crc32c, kmod-lib-crc32c
+Source: feeds/routing/batman-adv
+License: GPL-2.0
+Section: kernel
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: brcm2708
+Installed-Size: 63990
+Filename: kmod-batman-adv_3.14.25+2014.3.0-1_brcm2708.ipk
+Size: 64841
+MD5Sum: e72c820165120120a458ee06e205d2dd
+SHA256sum: 6736a9dbecd2f2f32a3e420b14737aa8e04cec38bcf0f39896f158d171a1911b
+Description:  B.A.T.M.A.N. advanced is a kernel module which allows to
+ build layer 2 mesh networks. This package builds
+ version 2014.3.0 of the kernel module.
+
+Package: kmod-nat46
+Version: 3.14.25+2-1
+Depends: kernel (=3.14.25-1-b3ee114fb6e21c16e31cc8bde6d0d03e), kmod-ipv6
+Source: feeds/routing/nat46
+License: GPL-2.0
+Section: kernel
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 13345
+Filename: kmod-nat46_3.14.25+2-1_brcm2708.ipk
+Size: 14114
+MD5Sum: 31f0734e2bc9574da2f48094861cdf53
+SHA256sum: 5ff2acab6051fca94f2bdf0c4545fb958212701eb94461a92323531dcd8131f5
+Description:  Stateless NAT46 translation kernel module
+
+Package: luci-app-bird4
+Version: 0.2
+Depends: libc, librt, libpthread, bird4-uci, luci-base
+Source: feeds/routing/bird-openwrt/bird4-openwrt
+License: GPL-3.0+
+Section: luci
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm2708
+Installed-Size: 4261
+Filename: luci-app-bird4_0.2_brcm2708.ipk
+Size: 5030
+MD5Sum: 6cd05816825e2673db5742be2cb617fd
+SHA256sum: fc33ea3112db6f40c9ba5cf303d3bc0ba5ccf623dd749eba58f2feaa10989294
+Description:  bird4 application for LuCI
+
+Package: luci-app-bird6
+Version: 0.2
+Depends: libc, librt, libpthread, bird6-uci, luci-base
+Source: feeds/routing/bird-openwrt/bird6-openwrt
+License: GPL-3.0+
+Section: luci
+Maintainer: Eloi Carbo <eloicaso@openmailbox.org>
+Architecture: brcm2708
+Installed-Size: 4412
+Filename: luci-app-bird6_0.2_brcm2708.ipk
+Size: 5170
+MD5Sum: a8288ee0d5e9fffb20572d1a30289fd3
+SHA256sum: 89230eb0d9b02c3d52c6a792f195c2715187c93cef1469d6cb06cf4b9a8ce651
+Description:  bird6 application for LuCI
+
+Package: luci-app-bmx6
+Version: 3
+Depends: libc, librt, libpthread, luci-lib-json, luci-mod-admin-full, luci-lib-httpclient, bmx6
+Source: feeds/routing/luci-app-bmx6
+License: GPL-2.0+
+Section: luci
+Maintainer: Pau Escrich <p4u@dabax.net>
+Architecture: brcm2708
+Installed-Size: 80955
+Filename: luci-app-bmx6_3_brcm2708.ipk
+Size: 81852
+MD5Sum: 4a9c1d77a896048f7814a1c244032a42
+SHA256sum: a60c3fe70ace4995579249112d48b7f427637fb90a8da0e9d41b1978112b7415
+Description:  bmx6 web application (status and configuration) for LuCi web interface
+
+Package: map-t
+Version: 2
+Depends: libc, librt, libpthread, map, kmod-nat46
+Source: feeds/routing/nat46
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 105
+Filename: map-t_2_brcm2708.ipk
+Size: 823
+MD5Sum: c48ba8b30770bdfe8ec8552a0a63b3a1
+SHA256sum: 4fdc250592b0b0291103c7d86970e64d15fd343fd8aa50c97ac9934e92d7cdc5
+Description:  MAP-T configuration support
+
+Package: mcproxy
+Version: 2014-05-31-6638aa9aabd2ccdde8915b61a8e0fb995b1f91a3-1
+Depends: libc, librt, libpthread, libpthread, libstdcpp
+Source: feeds/routing/mcproxy
+License: GPL-2.0+
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 107255
+Filename: mcproxy_2014-05-31-6638aa9aabd2ccdde8915b61a8e0fb995b1f91a3-1_brcm2708.ipk
+Size: 108220
+MD5Sum: bce61c15b6c3dec5a5f6654746a3136c
+SHA256sum: 083a81687e23f2cbc4c2850f351359c40fa536574aba7d00cd28d145bea7ebb9
+Description:  mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
+ It operates on the kernel tables for multicast routing and allows for multiple instantiations,
+ as well as dynamically changing downstream interfaces.
+
+Package: miniupnpd
+Version: 1.9.20141128-1
+Depends: libc, librt, libpthread, iptables, libip4tc, libip6tc, ip6tables, libnfnetlink
+Source: feeds/routing/miniupnpd
+License: BSD-3-Clause
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: brcm2708
+Installed-Size: 52222
+Filename: miniupnpd_1.9.20141128-1_brcm2708.ipk
+Size: 53165
+MD5Sum: 90cdea07cee1cb3bc171bbfb9743f180
+SHA256sum: 2801a97879fcd6d6b97ab2d406b5ae6015da3307f025f32ea429b5a23f0660b2
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mrd6
+Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1
+Depends: libc, librt, libpthread, libstdcpp
+Source: feeds/routing/mrd6
+License: GPL-2.0+
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 239176
+Filename: mrd6_2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1_brcm2708.ipk
+Size: 239767
+MD5Sum: 353f3a0ceb03e566819fb2a6828e3168
+SHA256sum: 2b3dd7734f7a1cce3ccf48dfa9ac33bc6b06445b7cf2d224790e24697e3bd55d
+Description:  Multicast is becoming a major component in next generation networks, used 
+ in several scenarios, from video broadcasting to multimedia conferencing. 
+ In order to be implemented, new technology needs supporting hardware and 
+ software across a set of devices and systems. MRD6 is an implementation of 
+ a modular IPv6 Multicast Routing Framework for the Linux operating system 
+ and provides MLDv2 (as well as MLDv1), PIM-SM and MBGP support.
+
+Package: ndppd
+Version: 0.2.3-1
+Depends: libc, librt, libpthread, kmod-ipv6, libstdcpp
+Source: feeds/routing/ndppd
+License: GPL-3.0+
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: brcm2708
+Installed-Size: 26993
+Filename: ndppd_0.2.3-1_brcm2708.ipk
+Size: 27994
+MD5Sum: fb1a6f15bdd69d3e65fdc117f52fb6df
+SHA256sum: 63a4f8593c0e5e74d2fc1aff57a09ed1fdeed142ca770d223e085fa36e2e427f
+Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
+ Protocol) messages between interfaces.  ndppd currently only supports Neighbor
+ Solicitation Messages and Neighbor Advertisement Messages.
+ 
+ The ndp_proxy provided by Linux doesn't support listing proxies, and only hosts
+ are supported.  No subnets.  ndppd solves this by listening for Neighbor
+ Solicitation messages on an interface, then query the internal interfaces for
+ that target IP before finally sending a Neighbor Advertisement message.
+
+Package: nodogsplash
+Version: 0.9_beta9.9.9-2
+Depends: libc, librt, libpthread, libpthread, iptables-mod-ipopt
+Source: feeds/routing/nodogsplash
+License: GPL-2.0+
+Section: net
+Architecture: brcm2708
+Installed-Size: 49448
+Filename: nodogsplash_0.9_beta9.9.9-2_brcm2708.ipk
+Size: 50364
+MD5Sum: f9687c222462ab4e3ce2caeff9fb0184
+SHA256sum: bca110e4485703223363eca4636be97c3a521957aedbf79a4df6692fc8351244
+Description:  Nodogsplash offers a simple way to open a free hotspot providing
+ restricted access to an internet connection.
+
+Package: ohybridproxy
+Version: 2014-09-29-ab6559bd5df88967e08478ab486b307c1b7eb759-1
+Depends: libc, librt, libpthread, libubox, mdnsd
+Source: feeds/routing/ohybridproxy
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: brcm2708
+Installed-Size: 9979
+Filename: ohybridproxy_2014-09-29-ab6559bd5df88967e08478ab486b307c1b7eb759-1_brcm2708.ipk
+Size: 10823
+MD5Sum: f1ded97f8cfc7458974af2ee64967666
+SHA256sum: 2cbf2c2f67fa6f30019496c8bf96ed1f5a7c94a82d36201168ff45c4bc7d275b
+Description:  This package provides a statically configured daemon for translating DNS
+ requests to Multicast DNS and back again.
+
+Package: olsrd-mod-arprefresh
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 2333
+Filename: olsrd-mod-arprefresh_0.6.7.1-5_brcm2708.ipk
+Size: 3097
+MD5Sum: 45fdaa3fea0f02893ddb5521dc29af63
+SHA256sum: 8e402dfc38913474efe771f7ec4e474f532cefcc35c40a46553fd5370c5be205
+Description:  Kernel ARP cache refresh plugin
+
+Package: olsrd-mod-bmf
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd, kmod-tun
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 12370
+Filename: olsrd-mod-bmf_0.6.7.1-5_brcm2708.ipk
+Size: 13153
+MD5Sum: 6600817098d95506388d6f8e4ab22363
+SHA256sum: e75fd70d9ea1b1a0bff936f47e99046cecc555c28c2e67fbde83134db9072dbe
+Description:  Basic multicast forwarding plugin
+
+Package: olsrd-mod-dot-draw
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 4323
+Filename: olsrd-mod-dot-draw_0.6.7.1-5_brcm2708.ipk
+Size: 5048
+MD5Sum: da90cc2fca7554f37eac26ec799fca2e
+SHA256sum: 7c96fd696850d04a71a3cf88450c8f05417c65ffd3d38a801a763b948a7fbb96
+Description:  Dot topology information plugin
+
+Package: olsrd-mod-dyn-gw-plain
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 2732
+Filename: olsrd-mod-dyn-gw-plain_0.6.7.1-5_brcm2708.ipk
+Size: 3498
+MD5Sum: 9565e3f771042b9f8a7b5e85f301989c
+SHA256sum: 5161b6b56b954eb1b3d6724cd149b00c67c5ead3649094ecf9056b29dc135e4a
+Description:  Dynamic internet gateway plain plugin
+
+Package: olsrd-mod-dyn-gw
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 4302
+Filename: olsrd-mod-dyn-gw_0.6.7.1-5_brcm2708.ipk
+Size: 5021
+MD5Sum: b74b0f405dbb845bd67b75751fc4260d
+SHA256sum: 6db1f4e7f76dd50ddf2a01d2921c7b7498bebc843eb7a45012d1fd329e51f790
+Description:  Dynamic internet gateway plugin
+
+Package: olsrd-mod-httpinfo
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 30234
+Filename: olsrd-mod-httpinfo_0.6.7.1-5_brcm2708.ipk
+Size: 31029
+MD5Sum: ca2f5a30ac9b5b8f0842f42702651535
+SHA256sum: 58e49b0e18183e305546184c6f2d980c17eca16a0e8ac45ae63d40256474b592
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-jsoninfo
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 13419
+Filename: olsrd-mod-jsoninfo_0.6.7.1-5_brcm2708.ipk
+Size: 14156
+MD5Sum: eee444cba2b09f8596c8daf5ca0b0231
+SHA256sum: a0b7841968bc1ffa6b997a27494bbc758675368ec4c18c84c11a19280c16f8f6
+Description:  Small informative plugin with JSON output
+
+Package: olsrd-mod-mdns
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 8688
+Filename: olsrd-mod-mdns_0.6.7.1-5_brcm2708.ipk
+Size: 9487
+MD5Sum: 4eee6547f76f2df77a38774209ffa9bf
+SHA256sum: e691776519793c1e8b11c4535ae81b238cb21a6093ec618709c9956a822aed95
+Description:  MDNS/Zeroconf/Bonjour packet distribution 
+
+Package: olsrd-mod-nameservice
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 11171
+Filename: olsrd-mod-nameservice_0.6.7.1-5_brcm2708.ipk
+Size: 11932
+MD5Sum: 68d97fd84377b2b3aad910bb56c9bbf9
+SHA256sum: f93b3e8cb98184ad31e8dcc5a0e7e736a0f01eaf004e916deccbd93532142c94
+Description:  Lightweight hostname resolver plugin
+
+Package: olsrd-mod-p2pd
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 7971
+Filename: olsrd-mod-p2pd_0.6.7.1-5_brcm2708.ipk
+Size: 8759
+MD5Sum: 47274d93dfbad7f765f873365f05db19
+SHA256sum: 8fe75d4e31775dfdc9210b791f5223a75d7fdcbaa81c783d4f3b651f0b580fb2
+Description:  Peer to Peer Discovery plugin
+
+Package: olsrd-mod-pgraph
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 3191
+Filename: olsrd-mod-pgraph_0.6.7.1-5_brcm2708.ipk
+Size: 3956
+MD5Sum: 772df7c5ff4ea03475bf0f9916047305
+SHA256sum: 68c03346740a58cc812e237bca2fa194a7f92b1ad87cb31154bf4a466e420453
+Description:  output network topology for pgraph
+
+Package: olsrd-mod-pud
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 52429
+Filename: olsrd-mod-pud_0.6.7.1-5_brcm2708.ipk
+Size: 53032
+MD5Sum: 3452a8ee4458dce3055ddcb4d5a22dec
+SHA256sum: ff709f1d4e2120c51fe9ef171d8f5d253520b894a72f6199e9afc5a72a3fc9d6
+Description:  Position Update Distribution plugin
+
+Package: olsrd-mod-quagga
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 6075
+Filename: olsrd-mod-quagga_0.6.7.1-5_brcm2708.ipk
+Size: 6786
+MD5Sum: a929163856e258a5414d22190be449ed
+SHA256sum: c6f162e6cd104e428c1dc635efef2c3c1922e61b6a67b914bc71a39adc13f3e8
+Description:  Quagga plugin
+
+Package: olsrd-mod-secure
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 9491
+Filename: olsrd-mod-secure_0.6.7.1-5_brcm2708.ipk
+Size: 10292
+MD5Sum: 9bf9a1bea497d84320a315c8cb7a58b0
+SHA256sum: 4ca92b12317875166aa20edc1d1d1500cb212f0261f7362ec211083e803687fb
+Description:  Message signing plugin to secure routing domain
+
+Package: olsrd-mod-sgwdynspeed
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 4597
+Filename: olsrd-mod-sgwdynspeed_0.6.7.1-5_brcm2708.ipk
+Size: 5367
+MD5Sum: cbbb5bef96a9f1b6aada6c5f799c1d33
+SHA256sum: 45c87aa644b10e06ea22d9f53eee7f36b43b1d566069ecc726786725b6955e9a
+Description:  Smart Gateway dynamic speed plugin
+
+Package: olsrd-mod-txtinfo
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 7626
+Filename: olsrd-mod-txtinfo_0.6.7.1-5_brcm2708.ipk
+Size: 8413
+MD5Sum: 0efbcb16ad169d24b5ed7c7d39855e0a
+SHA256sum: 34a7f25535b84c44361abd6264c5001263e9f446731d294124e52322bfd66b80
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-watchdog
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 2146
+Filename: olsrd-mod-watchdog_0.6.7.1-5_brcm2708.ipk
+Size: 2859
+MD5Sum: 5e89efa26f3b54a225bb1dd36da005af
+SHA256sum: 0a4c77d3d2b56beadd7efcd70f549385556023b10976aa5acd961ca917fa5463
+Description:  Watchdog plugin
+
+Package: olsrd
+Version: 0.6.7.1-5
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: brcm2708
+Installed-Size: 117540
+Filename: olsrd_0.6.7.1-5_brcm2708.ipk
+Size: 118303
+MD5Sum: e48f32d76dc7b959290d17d160288940
+SHA256sum: 71d555b9237217efad320db9effb829ba9529680ea5ca2b830c51ecee8cd6ad2
+Description:  OLSR (Optimized Link State Routing) daemon
+
+Package: smcroute
+Version: 2.0.0-1
+Depends: libc, librt, libpthread
+Source: feeds/routing/smcroute
+License: GPL-2.0+
+Section: net
+Maintainer: Leonardo Brondani Schenkel <leonardo@schenkel.net>
+Architecture: brcm2708
+Installed-Size: 13518
+Filename: smcroute_2.0.0-1_brcm2708.ipk
+Size: 14283
+MD5Sum: c4be4ebe316961d6b63e35b34e7cd998
+SHA256sum: 31e40a989b15ff1f332581ea6538e7f1040e9fd94151513b0fc8fe53a2f64441
+Description:  SMCRoute is a command line tool to manipulate the multicast routes of the Linux kernel.
+
+Package: vis
+Version: r1439-2
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/routing/batmand
+License: GPL-2.0
+Section: net
+Maintainer: Marek Lindner <lindner_marek@yahoo.de>
+Architecture: brcm2708
+Installed-Size: 10253
+Filename: vis_r1439-2_brcm2708.ipk
+Size: 10989
+MD5Sum: 6f969197250ba0a46de02d33fa61b0ae
+SHA256sum: 95ce024edcdd6836f14cb7dd74b4f9c24e66e65cd1e884d884b61b09dff48c19
+Description:  visualization server for B.A.T.M.A.N. layer 3
+

@@ -1,0 +1,368 @@
+Package: asterisk11-gui
+Version: 2.1.0-rc1
+Depends: libc, librt, libpthread, asterisk11-app-exec, asterisk11-app-system
+Source: feeds/telephony/admin/asterisk11-gui
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Section: admin
+Architecture: brcm2708
+Installed-Size: 498609
+Filename: asterisk11-gui_2.1.0-rc1_brcm2708.ipk
+Size: 499360
+MD5Sum: ef40eaa212ff42d7708bb364b6761fb7
+SHA256sum: e516d2b126c26c110d56862033b273c2d85ebd2cf8acf0a5e5033627521ea17c
+Description:  Asterisk11 GUI is a framework for the creation of graphical interfaces 
+ for configuring Asterisk-11.x package.
+
+Package: asterisk18-gui
+Version: 2.1.0-rc1
+Depends: libc, librt, libpthread, asterisk18-chan-local, asterisk18-app-exec, asterisk18-app-system
+Source: feeds/telephony/admin/asterisk18-gui
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Section: admin
+Architecture: brcm2708
+Installed-Size: 498686
+Filename: asterisk18-gui_2.1.0-rc1_brcm2708.ipk
+Size: 499477
+MD5Sum: 681de792f68455826b85d2dec543b9b0
+SHA256sum: 6da8a670b3604c989da1d508be87013fe6762b1cc6c3128253d1d8c719dcae3b
+Description:  Asterisk18 GUI is a framework for the creation of graphical interfaces 
+ for configuring Asterisk-1.8.x package.
+
+Package: bcg729
+Version: 1.0.0-1
+Depends: libc, librt, libpthread
+Source: feeds/telephony/libs/bcg729
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Alex Samorukov <samm@os2.kiev.ua>
+Architecture: brcm2708
+Installed-Size: 22904
+Filename: bcg729_1.0.0-1_brcm2708.ipk
+Size: 23806
+MD5Sum: 9014d464b52eb278d91c477eeb75aee0
+SHA256sum: eff7427a6222edff0767ee1299d7594262c800f9c479072fa86bc1947c4daec3
+Description:  Bcg729 is a software G729A encoder and decoder library written in C, developed
+ by Belledonne Communications, the company supporting the Linphone project.
+ It was written from scratch and is NOT a derivative work of ITU reference
+ source code in any kind.
+
+Package: libiksemel
+Version: 1.4-1
+Depends: libc, librt, libpthread, libgnutls, libtasn1, libgcrypt, libgpg-error
+Source: feeds/telephony/libs/iksemel
+License: LGPL-2.1
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: brcm2708
+Installed-Size: 18217
+Filename: libiksemel_1.4-1_brcm2708.ipk
+Size: 19038
+MD5Sum: 6324fbed973d7b212c516c225e0e7bc5
+SHA256sum: 9e1bb5ad64318b8d2a3306d3a2f920af8591b4fae65076600ddbfaa19f4b4317
+Description:  Iksemel is an XML parser library mainly designed for Jabber applications.
+ It provides SAX, DOM, and special Jabber stream APIs. Library is coded
+ in ANSI C except the network code (which is POSIX compatible), thus
+ highly portable.
+
+Package: libosip2
+Version: 4.1.0-1
+Depends: libc, librt, libpthread, librt
+Source: feeds/telephony/libs/libosip2
+License: LGPL-2.1+
+LicenseFiles: COPYING
+Section: libs
+Architecture: brcm2708
+Installed-Size: 61487
+Filename: libosip2_4.1.0-1_brcm2708.ipk
+Size: 61962
+MD5Sum: 0b7fc48c37bf03a74ffdd0f35eea8ab9
+SHA256sum: a5344eb9b40000996f95ebfd707e7cacb64a91057695d1932241758d56da7747
+Description:  GNU oSIP library, a Session Initiation Protocol (SIP) implementation.
+
+Package: libre
+Version: 0.4.10-1
+Depends: libc, librt, libpthread, libopenssl, libpthread
+Source: feeds/telephony/libs/re
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: brcm2708
+Installed-Size: 133440
+Filename: libre_0.4.10-1_brcm2708.ipk
+Size: 132937
+MD5Sum: ce2b45616987aabb6cc6c69cf351def1
+SHA256sum: cfaac2230a6ef6280faa47613311a0d65b98581edbb97e176a60c0f258210121
+Description:  Generic library for real-time communications with async IO support
+
+Package: librem
+Version: 0.4.6-1
+Depends: libc, librt, libpthread, libre, libpthread
+Source: feeds/telephony/libs/rem
+License: BSD-3-Clause
+LicenseFiles: docs/COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: brcm2708
+Installed-Size: 16687
+Filename: librem_0.4.6-1_brcm2708.ipk
+Size: 17494
+MD5Sum: d70f0957f37f2868e72a6c440d660e2f
+SHA256sum: 9bac9337280e0c290d65cb947cde39e9dec02a68278e6d0217eee06e947b3dca
+Description:  Audio and video processing media library
+
+Package: libspandsp
+Version: 0.0.6-2
+Depends: libc, librt, libpthread, libtiff
+Source: feeds/telephony/libs/spandsp
+License: LGPL-2.1 GPL-2.0
+LicenseFiles: COPYING
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: brcm2708
+Installed-Size: 266081
+Filename: libspandsp_0.0.6-2_brcm2708.ipk
+Size: 265341
+MD5Sum: 4489b576494e45f025a11259f78473df
+SHA256sum: c0154519bc48225c17b93692461f254074cce72fa3c9576081dfeabec4ab495c
+Description:  spandsp library
+
+Package: libsrtp
+Version: 1.4.4-1
+Depends: libc, librt, libpthread
+Source: feeds/telephony/libs/libsrtp
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: brcm2708
+Installed-Size: 31466
+Filename: libsrtp_1.4.4-1_brcm2708.ipk
+Size: 31643
+MD5Sum: c1d6f0ca77d56da22879400b905556b6
+SHA256sum: a499932da67eb9c0cb75e2164f3891f0d903846344e89555ca45c9447e5cbd01
+Description:  Open-source implementation of the Secure Real-time Transport
+ Protocol (SRTP) originally authored by Cisco Systems, Inc.
+ It is available under a BSD-style license.
+
+Package: miax
+Version: 1.4-2
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/telephony/net/miax
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Section: net
+Architecture: brcm2708
+Installed-Size: 31378
+Filename: miax_1.4-2_brcm2708.ipk
+Size: 32107
+MD5Sum: f0895156b641c6436d49077ba3e9bdf8
+SHA256sum: 03a1a617921c60c5e4eb15fb5dd890c2f2e5dde2a714489162d7c92f9ad537ee
+Description:  miax is a console iax (asterisk) client, it can work with 
+ a soundcard as a normal voip phone, taking input/output from 
+ keyboard or analog/gsm/isdn modem.
+
+Package: pcapsipdump
+Version: 0.2-1
+Depends: libc, librt, libpthread, libpcap, libstdcpp
+Source: feeds/telephony/net/pcapsipdump
+License: GPL-2.0+
+LicenseFiles: LICENSE
+Section: net
+Architecture: brcm2708
+Installed-Size: 3483
+Filename: pcapsipdump_0.2-1_brcm2708.ipk
+Size: 4343
+MD5Sum: b22dc9b48fdc9bac1d11ddce42f87c2d
+SHA256sum: 2353cf90dc2578564e633dd73054ca094ac4cc2f791b10caf0c3e12b68bf1b47
+Description:  pcapsipdump is a tool for dumping SIP sessions (+RTP traffic, if available) to disk in a
+ fashion similar to "tcpdump -w" (format is exactly the same), but one file per sip session
+ (even if there is thousands of concurrect SIP sessions).
+
+Package: rtpproxy
+Version: 1.2.1-1
+Depends: libc, librt, libpthread, libpthread
+Source: feeds/telephony/net/rtpproxy
+License: BSD-2-Clause
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 25154
+Filename: rtpproxy_1.2.1-1_brcm2708.ipk
+Size: 25824
+MD5Sum: e9c2b526a08313c356c1804d1d2bd2a5
+SHA256sum: f163fa935b56593595fabb03049e45d5748723046ceec23c7078e5b47d6a682c
+Description:  RTP (Realtime Transport Protocol) proxy
+
+Package: sipp
+Version: 3.3.990-1
+Depends: libc, librt, libpthread, libncurses, libpthread, libstdcpp
+Source: feeds/telephony/net/sipp
+License: GPL-2.0+ BSD-3-Clause Zlib
+LicenseFiles: LICENSE.txt
+Section: net
+Architecture: brcm2708
+Installed-Size: 128741
+Filename: sipp_3.3.990-1_brcm2708.ipk
+Size: 129204
+MD5Sum: 7672cdc45d054c790e331b1f2d7dba0e
+SHA256sum: 6d2c284738b5592b99cc8aa4fc8ba510fc25caf348aec328cf9110a230e080af
+Description:  SIPp is a free Open Source test tool / traffic generator for the SIP
+ protocol. It includes a few basic SipStone user agent scenarios (UAC and
+ UAS) and establishes and releases multiple calls with the INVITE and BYE
+ methods.
+
+Package: siproxd-mod-defaulttarget
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 2587
+Filename: siproxd-mod-defaulttarget_0.8.1-4_brcm2708.ipk
+Size: 3320
+MD5Sum: cbba5e446f2e34dcbe27c2c4b450034b
+SHA256sum: 79deb6ed7e038fe181d6b998f5522d04dd9649edaf1a549abd4dd3681d32f8b6
+Description:  siproxd defaulttarget plugin
+
+Package: siproxd-mod-demo
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 1935
+Filename: siproxd-mod-demo_0.8.1-4_brcm2708.ipk
+Size: 2657
+MD5Sum: 440d1d151299b0d3be921bf034e35012
+SHA256sum: 5573e498380960b67d3a91071569d0ebf4e3af15da0809a64adc6b98982b7322
+Description:  siproxd demo plugin
+
+Package: siproxd-mod-fix_bogus_via
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 2589
+Filename: siproxd-mod-fix_bogus_via_0.8.1-4_brcm2708.ipk
+Size: 3325
+MD5Sum: 2c3381a4b68abc51d0119dca0847d1d1
+SHA256sum: afe50fe9af0c9d6b2f50fc6cb4133b4c01d44808b87b0db760e177fe007660c7
+Description:  siproxd fix_bogus_via plugin
+
+Package: siproxd-mod-logcall
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 2114
+Filename: siproxd-mod-logcall_0.8.1-4_brcm2708.ipk
+Size: 2837
+MD5Sum: 3e3ef0f95a2b270e2aa46ae41b09834a
+SHA256sum: 4024ee4a4ef707733fd3f39ae9fb69fcac755533f7a308de7e17c61fa60d6e18
+Description:  siproxd logcall plugin
+
+Package: siproxd-mod-prefix
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 3188
+Filename: siproxd-mod-prefix_0.8.1-4_brcm2708.ipk
+Size: 3922
+MD5Sum: e3eb4af4c09226297f790623c40b13e6
+SHA256sum: 01cadf2ec2e9ccde09977d117aa4aadf932c71b2318b1459e4e4d6b6f7b3c782
+Description:  siproxd prefix plugin
+
+Package: siproxd-mod-regex
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 4416
+Filename: siproxd-mod-regex_0.8.1-4_brcm2708.ipk
+Size: 5113
+MD5Sum: c39e971fa6084445ae753e69feb15876
+SHA256sum: 1506d1531527dcfd3ee2faae5a448c95c9ec1ad07d332cd47fa66483ed05ef00
+Description:  siproxd regex plugin
+
+Package: siproxd-mod-shortdial
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 3055
+Filename: siproxd-mod-shortdial_0.8.1-4_brcm2708.ipk
+Size: 3791
+MD5Sum: ff1446727e68311c3e0ad25cd71302c4
+SHA256sum: 1240bfef492894a68d0e88da6c6c0d02391953dbf7d6e9ed46c801e22139036b
+Description:  siproxd shortdial plugin
+
+Package: siproxd-mod-stun
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, siproxd
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 3799
+Filename: siproxd-mod-stun_0.8.1-4_brcm2708.ipk
+Size: 4489
+MD5Sum: 4618ed2a25a105a0d77583ac85d0e10a
+SHA256sum: db1f727f639301ef396352dde65d2bdf48f9105198ac45db21bf15ad7b02d662
+Description:  siproxd stun plugin
+
+Package: siproxd
+Version: 0.8.1-4
+Depends: libc, librt, libpthread, libltdl, libpthread, libosip2
+Source: feeds/telephony/net/siproxd
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 50559
+Filename: siproxd_0.8.1-4_brcm2708.ipk
+Size: 51091
+MD5Sum: 264a20c0074d1d90dd4a384f957913dc
+SHA256sum: f3c7759d6c90abe56f5a265a78cd1fcc919ddf74ab4e5099405a26e6d75bfff8
+Description:  Siproxd is a proxy/masquerading daemon for the SIP protocol.
+
+Package: sipsak
+Version: 0.9.6-1-4
+Depends: libc, librt, libpthread, libopenssl
+Source: feeds/telephony/net/sipsak
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: net
+Architecture: brcm2708
+Installed-Size: 28209
+Filename: sipsak_0.9.6-1-4_brcm2708.ipk
+Size: 28934
+MD5Sum: cef537c6594dd656c0b9df154d863be4
+SHA256sum: 5b9873a5627a2b88596e383557eaaa0b6adfee34893a0800ac88898ab57ef72d
+Description:  SIP (Session Initiation Protocol) stress and diagnostics utility
+

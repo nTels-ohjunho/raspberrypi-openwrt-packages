@@ -14,6 +14,10 @@
 
 ## 사용방법 
 
+1. git clone https://github.com/nTels-ohjunho/raspberrypi-openwrt-packages 를 수행하여 패키지를 로컬서버로 가져옵니다.
+2. 받은 패키지 폴더를 FTP로 노출합니다.
+3.  opkg.conf 에 FTP 주소로 경로를 변경합니다.
+
 라즈베리파이 설치 후 /etc/opkg.conf를 변경하여 사용합니다. 
 ```
 vi /etc/opkg.conf 
@@ -23,13 +27,13 @@ dest root /
 dest ram /tmp
 lists_dir ext /var/opkg-lists
 option overlay_root /overlay
-src/gz chaos_calmer_base https://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/base
-src/gz chaos_calmer_luci https://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/luci
-src/gz chaos_calmer_management https://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/management
-src/gz chaos_calmer_oldpackages https://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/oldpackages
-src/gz chaos_calmer_packages https://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/packages
-src/gz chaos_calmer_routinghttps://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/routing
-src/gz chaos_calmer_telephonyhttps://raw.githubusercontent.com/nTels-ohjunho/raspberrypi-openwrt-packages/master/telephony
+src/gz chaos_calmer_base [FTP주소]/base
+src/gz chaos_calmer_luci [FTP주소]/luci
+src/gz chaos_calmer_management [FTP주소]/management
+src/gz chaos_calmer_oldpackages [FTP주소]/oldpackages
+src/gz chaos_calmer_packages [FTP주소]/packages
+src/gz chaos_calmer_routing [FTP주소]/routing
+src/gz chaos_calmer_telephony[FTP주소]/telephony
 ```
 ```
 opkg update
